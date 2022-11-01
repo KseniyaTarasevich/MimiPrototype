@@ -38,22 +38,22 @@ public class PlayerController : MonoBehaviour
     private void SwipeCheck()
     {
 
-        //if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-        //{
-        //    _startTouchPosition = Input.GetTouch(0).position;
-        //}
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            _startTouchPosition = Input.GetTouch(0).position;
+        }
 
 
-        //if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-        //{
-        //    _endTouchPosition = Input.GetTouch(0).position;
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+        {
+            _endTouchPosition = Input.GetTouch(0).position;
 
-        //    if (_endTouchPosition.y > _startTouchPosition.y && _rb.velocity.y == 0)
-        //    {
-        //        isJumpAllowed = true;
-        //    }
-        //}
-
+            if (_endTouchPosition.y > _startTouchPosition.y && _rb.velocity.y == 0)
+            {
+                isJumpAllowed = true;
+            }
+        }
+       
         if (Input.touchCount > 0 && Input.GetTouch(1).phase == TouchPhase.Began)
         {
             _startTouchPosition = Input.GetTouch(1).position;
