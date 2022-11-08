@@ -28,8 +28,8 @@ public class CameraController : MonoBehaviour
 
         this.transform.position = new Vector3()
         {
-            x = this.playerTransform.position.x+10,
-            y = this.playerTransform.position.y+10,
+            x = this.playerTransform.position.x + 10,
+            y = this.playerTransform.position.y + 10,
             z = this.playerTransform.position.z - 10
         };
     }
@@ -40,8 +40,8 @@ public class CameraController : MonoBehaviour
         {
             Vector3 target = new Vector3()
             {
-                x = this.playerTransform.position.x+10,
-                y = this.playerTransform.position.y+10,
+                x = this.playerTransform.position.x + 10,
+                y = this.playerTransform.position.y + 10,
                 z = this.playerTransform.position.z - 10
             };
 
