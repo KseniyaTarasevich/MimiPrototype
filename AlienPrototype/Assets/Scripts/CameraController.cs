@@ -5,7 +5,6 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform playerTransform;
-    [SerializeField] private string playerTag;
     [SerializeField] private float movingSpeed;
 
     [SerializeField] private float leftBoundary;
@@ -13,24 +12,26 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float bottomBoundary;
     [SerializeField] private float upperBoundary;
 
+    private static CameraController _instance;
+    public static CameraController Instance { get => _instance; }
 
-    private void Awake()
+    private void Awake() 
     {
-        if (this.playerTransform == null)
-        {
-            if (this.playerTag == "")
-            {
-                this.playerTag = "Player";
-            }
+        _instance = this;
+    }
 
-            this.playerTransform = GameObject.FindGameObjectWithTag(this.playerTag).transform;
+    public void Attach(Transform _playerTransform)
+    {
+        if (playerTransform == null)
+        {
+            playerTransform = _playerTransform;
         }
 
-        this.transform.position = new Vector3()
+        transform.position = new Vector3()
         {
-            x = this.playerTransform.position.x+10,
-            y = this.playerTransform.position.y+10,
-            z = this.playerTransform.position.z - 10
+            x = playerTransform.position.x+10,
+            y = playerTransform.position.y+10,
+            z = playerTransform.position.z - 10
         };
     }
 

@@ -3,18 +3,23 @@ using System.Collections;
 
 public class MovePlayer : MonoBehaviour
 {
-    public Transform player;
-    private Rigidbody2D _rb;
+    private Transform player;
+    private static Rigidbody2D _rb;
     [SerializeField] private float speed = 2f;
-    [SerializeField] private PlayerController playerController;
 
-    private void Awake()
+    private static MovePlayer _instance;
+    public static MovePlayer Instance { get => _instance; }
+
+    public void GiveMeRigibody(Rigidbody2D _playerRigidbody)
     {
-        _rb = playerController.GetComponent<Rigidbody2D>();
+        _rb = _playerRigidbody;
+        player = _rb.gameObject.transform;
     }
 
     void OnMouseDrag()
     {
+        if (_rb == null) return;
+
         Debug.Log("kek "+ PlayerController.inAir);
         if (PlayerController.inAir == false)
         {
@@ -38,16 +43,21 @@ public class MovePlayer : MonoBehaviour
         //}
     }
 
-        //private void Update()
-        //{
-        //    float h = speed * Input.GetAxis("Mouse X");
-        //    float v = speed * Input.GetAxis("Mouse Y");
-
-        //    Debug.Log(h + " " + v);
-        //    player.Rotate(v, h, 0);
-
-        //    Debug.Log("захватывающий геймплей");
-        //}
+    private void Awake()
+    {
+        _instance = this;
     }
+
+    //private void Update()
+    //{
+    //    float h = speed * Input.GetAxis("Mouse X");
+    //    float v = speed * Input.GetAxis("Mouse Y");
+
+    //    Debug.Log(h + " " + v);
+    //    player.Rotate(v, h, 0);
+
+    //    Debug.Log("захватывающий геймплей");
+    //}
+}
 
 
