@@ -13,24 +13,31 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float bottomBoundary;
     [SerializeField] private float upperBoundary;
 
+    private static CameraController _instance;
+    public static CameraController Instance { get => _instance; }
 
-    private void Awake()
+    private void Awake() 
     {
-        if (this.playerTransform == null)
+        _instance = this;
+    }
+
+    public void Attach()
+    {
+        if (playerTransform == null)
         {
-            if (this.playerTag == "")
+            if (playerTag == "")
             {
-                this.playerTag = "Player";
+                playerTag = "Player";
             }
 
-            this.playerTransform = GameObject.FindGameObjectWithTag(this.playerTag).transform;
+            playerTransform = GameObject.FindGameObjectWithTag(playerTag).transform;
         }
 
-        this.transform.position = new Vector3()
+        transform.position = new Vector3()
         {
-            x = this.playerTransform.position.x + 10,
-            y = this.playerTransform.position.y + 10,
-            z = this.playerTransform.position.z - 10
+            x = playerTransform.position.x+10,
+            y = playerTransform.position.y+10,
+            z = playerTransform.position.z - 10
         };
     }
 
@@ -40,8 +47,8 @@ public class CameraController : MonoBehaviour
         {
             Vector3 target = new Vector3()
             {
-                x = this.playerTransform.position.x + 10,
-                y = this.playerTransform.position.y + 10,
+                x = this.playerTransform.position.x+10,
+                y = this.playerTransform.position.y+10,
                 z = this.playerTransform.position.z - 10
             };
 
