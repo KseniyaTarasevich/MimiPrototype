@@ -4,13 +4,12 @@ using System.Collections;
 public class MovePlayer : MonoBehaviour
 {
     public Transform player;
-    private Rigidbody2D _rb;
+    private static Rigidbody2D _rb;
     [SerializeField] private float speed = 2f;
-    [SerializeField] private PlayerController playerController;
 
-    private void Awake()
+    public static void GiveMeRigibody()
     {
-        _rb = playerController.GetComponent<Rigidbody2D>();
+        _rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
     }
 
     void OnMouseDrag()
@@ -48,6 +47,6 @@ public class MovePlayer : MonoBehaviour
 
         //    Debug.Log("захватывающий геймплей");
         //}
-    }
+}
 
 
