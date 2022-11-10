@@ -15,7 +15,6 @@ public class CharacterSpawnPoint : MonoBehaviour
 
     public void Spawn()
     {
-        UnityEngine.Debug.Log("Spawn");
         GameObject newCharacter = Instantiate(characterPrefab, transform);
     }
 
