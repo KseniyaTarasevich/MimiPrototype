@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     void Start ()
     {
-        MovePlayer.GiveMeRigibody();
+        MovePlayer.Instance.GiveMeRigibody(_rb);
     }
 
     void Update()
