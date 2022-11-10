@@ -21,6 +21,11 @@ public class PlayerController : MonoBehaviour
         _sprite = GetComponentInChildren<SpriteRenderer>();
     }
 
+    void Start ()
+    {
+        MovePlayer.GiveMeRigibody();
+    }
+
     void Update()
     {
         //Debug.Log(_rb.velocity);
