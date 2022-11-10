@@ -42,9 +42,6 @@ public class GameController : MonoBehaviour
     private void CharacterRespawn()
     {
         characterSpawnPointScript.Spawn();
-
-        // приаттачим камеру к заспавненому персу
-        CameraController.Instance.Attach();
     }
 
     void Awake()
@@ -60,7 +57,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("CharacterRespawn", 1);
+
     }
 
     // Update is called once per frame
