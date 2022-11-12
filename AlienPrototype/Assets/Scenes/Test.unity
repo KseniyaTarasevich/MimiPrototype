@@ -530,7 +530,7 @@ GameObject:
   - component: {fileID: 521190779}
   m_Layer: 0
   m_Name: krio
-  m_TagString: CharacterSpawnPoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1259,7 +1259,7 @@ GameObject:
   - component: {fileID: 1554439957}
   - component: {fileID: 1554439956}
   m_Layer: 0
-  m_Name: Sceintist
+  m_Name: Scientist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
