@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: Scientist_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: bd0498364ec98fc4ea018b697e0f89df, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 282c8154ac279024bb5e4d13b121f917, type: 2}
+  - {fileID: 2100000, guid: 471b4f962d396e641873311af1374ce5, type: 2}
+  - {fileID: 2100000, guid: 84c885cda93aa9944b6b75ad48351a6a, type: 2}

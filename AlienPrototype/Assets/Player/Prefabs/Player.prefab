@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48730ed28a2daa54db8524a07ec7d4ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 20
+  jumpForce: 27
   player: {fileID: 2810996844886044375}
 --- !u!114 &3366532492189459611
 MonoBehaviour:

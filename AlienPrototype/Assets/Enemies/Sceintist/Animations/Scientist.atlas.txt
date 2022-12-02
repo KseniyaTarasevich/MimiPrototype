@@ -1,0 +1,207 @@
+
+Scientist.png
+size: 2046,1966
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 2, 1304
+  size: 394, 555
+  orig: 394, 555
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 825, 1528
+  size: 294, 496
+  orig: 294, 496
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 1588, 1796
+  size: 168, 355
+  orig: 168, 355
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 2, 1700
+  size: 821, 156
+  orig: 821, 156
+  offset: 0, 0
+  index: -1
+neck
+  rotate: false
+  xy: 1078, 1824
+  size: 508, 140
+  orig: 508, 140
+  offset: 0, 0
+  index: -1
+Брови
+  rotate: false
+  xy: 479, 1858
+  size: 597, 106
+  orig: 597, 106
+  offset: 0, 0
+  index: -1
+Волосы
+  rotate: false
+  xy: 547, 739
+  size: 811, 480
+  orig: 811, 480
+  offset: 0, 0
+  index: -1
+Губы
+  rotate: false
+  xy: 2, 1891
+  size: 251, 73
+  orig: 251, 73
+  offset: 0, 0
+  index: -1
+Желтая Слизень
+  rotate: true
+  xy: 535, 208
+  size: 529, 579
+  orig: 529, 579
+  offset: 0, 0
+  index: -1
+Жидкость
+  rotate: false
+  xy: 2, 310
+  size: 531, 531
+  orig: 531, 531
+  offset: 0, 0
+  index: -1
+Ладонь Правой Руки
+  rotate: false
+  xy: 2, 843
+  size: 543, 459
+  orig: 543, 459
+  offset: 0, 0
+  index: -1
+Левая Кисть
+  rotate: false
+  xy: 1412, 1043
+  size: 473, 452
+  orig: 473, 452
+  offset: 0, 0
+  index: -1
+Нос
+  rotate: true
+  xy: 255, 1872
+  size: 92, 222
+  orig: 92, 222
+  offset: 0, 0
+  index: -1
+Очки
+  rotate: false
+  xy: 559, 1221
+  size: 851, 274
+  orig: 851, 274
+  offset: 0, 0
+  index: -1
+Правая Рука
+  rotate: false
+  xy: 1116, 2
+  size: 742, 532
+  orig: 742, 532
+  offset: 0, 0
+  index: -1
+Рюкзак
+  rotate: true
+  xy: 1360, 536
+  size: 505, 684
+  orig: 505, 684
+  offset: 0, 0
+  index: -1
+Часы
+  rotate: false
+  xy: 1323, 1497
+  size: 417, 297
+  orig: 417, 297
+  offset: 0, 0
+  index: -1
+
+Scientist2.png
+size: 1823,1679
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3
+  rotate: true
+  xy: 599, 587
+  size: 551, 1003
+  orig: 551, 1003
+  offset: 0, 0
+  index: -1
+Банка
+  rotate: true
+  xy: 1137, 2
+  size: 583, 684
+  orig: 583, 684
+  offset: 0, 0
+  index: -1
+Левая Нога
+  rotate: true
+  xy: 2, 1151
+  size: 526, 1082
+  orig: 526, 1082
+  offset: 0, 0
+  index: -1
+Левая Рука
+  rotate: true
+  xy: 2, 14
+  size: 571, 1133
+  orig: 571, 1133
+  offset: 0, 0
+  index: -1
+Пальцы Правой Руки
+  rotate: false
+  xy: 2, 609
+  size: 595, 540
+  orig: 595, 540
+  offset: 0, 0
+  index: -1
+Правая Рука Резерв
+  rotate: false
+  xy: 1086, 1140
+  size: 625, 537
+  orig: 625, 537
+  offset: 0, 0
+  index: -1
+
+Scientist3.png
+size: 2035,1880
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+face
+  rotate: false
+  xy: 2, 3
+  size: 866, 832
+  orig: 866, 832
+  offset: 0, 0
+  index: -1
+Пистолет
+  rotate: false
+  xy: 870, 2
+  size: 1119, 831
+  orig: 1119, 831
+  offset: 0, 0
+  index: -1
+Правая Нога
+  rotate: false
+  xy: 1440, 835
+  size: 593, 1043
+  orig: 593, 1043
+  offset: 0, 0
+  index: -1
+Торс
+  rotate: true
+  xy: 2, 837
+  size: 1041, 1436
+  orig: 1041, 1436
+  offset: 0, 0
+  index: -1

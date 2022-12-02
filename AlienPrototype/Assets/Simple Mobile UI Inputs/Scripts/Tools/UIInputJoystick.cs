@@ -36,8 +36,8 @@ namespace UI_Inputs
 
         private void OnDisable()
         {
-            if (joystick != null)
-                joystick.ResetJoystick();
+       //     if (joystick != null)
+              //  joystick.ResetJoystick();
         }
     }
 }
